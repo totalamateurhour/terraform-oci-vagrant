@@ -17,12 +17,13 @@ ssh-keygen -f ~/.ssh/id_rsa_ol7oci -t rsa -N ''
 
 # fingerprint to include in terraform.tfvars
 echo "********************************************"
+echo "- Run vagrant up; vagrant ssh"
 echo "- Run the command below to show fingerprint"
 echo "- Include this fingerprint in terraform.tfvars"
 echo "********************************************"
-echo ""
+echo 
 echo "openssl rsa -pubout -outform DER -in ~/.oci/oci_api_key.pem | openssl md5 -c"
-echo ""
+echo 
 openssl rsa -pubout -outform DER -in ~/.oci/oci_api_key.pem | openssl md5 -c
 
 # public key to upload to OCI console
@@ -30,7 +31,7 @@ echo "********************************************"
 echo " - Run this command to show the public key"
 echo " - Upload this public key to the OCI console"
 echo "********************************************"
-echo ""
+echo 
 echo "cat ~/.oci/oci_api_key_public.pem"
-echo ""
+echo 
 cat ~/.oci/oci_api_key_public.pem
