@@ -1,0 +1,23 @@
+# -- Tenant Information
+
+tenancy_ocid = "<YOUR Tenancy OCID>"
+user_ocid = "<YOUR User OCID>"
+fingerprint = "<YOUR private API key fingerprint>"
+private_key_path = "/home/vagrant/.oci/oci_api_key.pem"
+compartment_ocid = "<YOUR Compartment OCID"
+
+# Adjust YOUR Region below, if necessary
+region = "us-phoenix-1"
+
+
+
+# ---- availability domain (1, 2 or 3)
+
+AD = "1"
+
+# ---- Authorized public IPs ingress (0.0.0.0/0 means all Internet)
+authorized_ips="0.0.0.0/0" # all Internet
+
+
+# -- variables for compute instance creation
+ssh_public_key_file_ol7oci = "/home/vagrant/.ssh/id_rsa_ol7oci.pub"
