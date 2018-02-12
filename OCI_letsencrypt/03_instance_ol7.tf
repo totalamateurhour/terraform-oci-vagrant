@@ -21,7 +21,7 @@ resource "oci_core_instance" "letsencrypt-ol7" {
   shape = "VM.Standard1.1"
   subnet_id = "${oci_core_subnet.letsencrypt-public-subnet1.id}"
   metadata {
-    ssh_authorized_keys = "${file(var.ssh_public_key_file_ol7)}"
+    ssh_authorized_keys = "${file(var.ssh_public_key_file_ol7oci)}"
   }
 
 
