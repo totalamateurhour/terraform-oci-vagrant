@@ -18,7 +18,7 @@ ssh-keygen -f ~/.ssh/id_rsa_ol7oci -t rsa -N ''
 # fingerprint to include in terraform.tfvars
 echo 
 echo "********************************************"
-echo "- Run vagrant up; vagrant ssh"
+echo "- Run vagrant ssh"
 echo "- Run the command below to show fingerprint"
 echo "- Include this fingerprint in terraform.tfvars"
 echo "********************************************"
