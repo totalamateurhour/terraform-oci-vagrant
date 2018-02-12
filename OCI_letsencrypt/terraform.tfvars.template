@@ -2,7 +2,7 @@
 
 tenancy_ocid = "<YOUR Tenancy OCID>"
 user_ocid = "<YOUR User OCID>"
-fingerprint = "<YOUR private API key fingerprint>"
+fingerprint = "<YOUR API public key fingerprint>"
 private_key_path = "/home/vagrant/.oci/oci_api_key.pem"
 compartment_ocid = "<YOUR Compartment OCID"
 
